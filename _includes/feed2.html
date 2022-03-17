@@ -1,0 +1,23 @@
+<div
+  id="secondpage"
+  class="post-container d-flex flex-wrap justify-content-center m-auto"
+>
+  {% if page.paginator %} {% assign paginator = page.paginator %} {% endif %} {%
+  for post in paginator.posts %}
+  <a href="{{ post.url | prepend: site.baseurl }}" class="postcard-sm">
+    <div class="card shadow-sm p-0 h-auto">
+      <div class="h-half overflow-hidden d-flex align-items-center">
+      </div>
+      <div class="h-half overflow-hidden">
+        <div class="post-categories d-flex justify-content-start m-10">
+          {% for category in post.categories %}
+          <div class="m-10">{{category}}</div>
+          {% endfor %}
+        </div>
+        <div class="post-title">{{post.title}}</div>
+        <div class="post-date">{{ post.date | date: '%B %d, %Y' }}</div>
+      </div>
+    </div>
+  </a>
+  {% endfor %}
+</div>

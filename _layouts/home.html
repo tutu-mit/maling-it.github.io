@@ -1,0 +1,50 @@
+---
+layout: default
+---
+{% include navbar.html %}
+<div class="content-wrapper zxbg">
+    <div class="card p-0 shadow-lg">
+            <div id="dsh" class="content">
+                <img alt="Logo Zxce3" class="zxa" src="assets/zxce3.svg">
+
+                <h1 class="hero-header text-center">
+                    <strong class="font-weight-bolder">{{ site.title }}<span class="blink">|</span></strong>
+                </h1>
+                <div class="text-center">
+                <a href="/all/" class="btn btns btn-primary is-cta" role="button">
+                    Blog
+                </a>
+                <a href="/tools/" class="btn btns ml-10 is-cta" role="button">
+                    Tools
+                </a>
+            </div>
+            </div>
+    </div>
+    <div class="card p-0 shadow-lg">
+        <!-- <div class="content m-0 docs-cards-container"> -->
+            <div class="content">
+                <div class="row">
+                {% for p in site.posts %}
+                {% include post-card.html %}
+                {% endfor %}
+            </div>
+            </div>
+
+        <!-- </div> -->
+    </div>
+{% for cat in site.categories %}
+    <div class="card p-0 shadow-lg">
+        <!-- <div class="content m-0 docs-cards-container"> -->
+            <div class="content">
+                <div class="row">
+                {% for p in cat.last limit:6 %}
+                {% include post-card.html %}
+                {% endfor %}
+            </div>
+            </div>
+
+        <!-- </div> -->
+    </div>
+{% endfor %}
+{% include footer.html %}
+</div>

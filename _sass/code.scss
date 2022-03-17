@@ -1,0 +1,108 @@
+/*
+ * The syntax dark mode styles.
+ */
+
+@mixin dark-syntax {
+  /* -----  My styles ------ */
+  --highlight-bg-color: #252525;
+  --highlighter-rouge-color: #de6b18;
+  --highlight-lineno-color: #6c6c6d;
+  --highlight-lineno-border-color: #303435;
+  --inline-code-bg: #272822;
+
+  .highlight {
+    .gp { color: #818c96; }
+  }
+}
+/* * The syntax dark mode styles. */
+ .highlight {
+   overflow: auto;
+}
+ .highlight .lineno {
+   margin-left: 0.2rem;
+   padding-right: 0.5rem;
+   min-width: 2.2rem;
+   text-align: right;
+   color: var(--highlight-lineno-color);
+   border-right: 1px solid var(--highlight-lineno-border-color);
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   -o-user-select: none;
+   user-select: none;
+}
+ .highlight pre {
+   margin-bottom: 0;
+   font-size: 1.4rem;
+   word-wrap: normal;
+  /* Fixed Safari overflow-x */
+}
+ .highlight table {
+   padding: 0;
+   border: 0;
+}
+ .highlight table td pre {
+   overflow: visible;
+  /* Fixed iOS safari overflow-x */
+   word-break: normal;
+  /* Fixed iOS safari linenos code break */
+}
+ .highlight td {
+   padding: 0;
+   border: 0;
+}
+ .highlighter-rouge {
+   color: #CC3300 !important;
+   margin-top: 0.5rem;
+   margin-bottom: 1.2em;
+  /* Override BS Inline-code style */
+   text-decoration: none !important;
+}
+.dark-mode .highlighter-rouge{
+  color: #e6db74 !important;
+}
+ code {
+   -webkit-hyphens: none;
+   -ms-hyphens: none;
+   -moz-hyphens: none;
+   hyphens: none;
+}
+.dark-mode code.highlighter-rouge {
+ color:rgba(255,255,255,.8);
+ background-color:transparent;
+ border-color:rgba(255,255,255,.2)
+}
+code.highlighter-rouge {
+ line-height:1.5;
+ padding:.1rem .5rem;
+ margin:0 .1rem;
+ color:rgba(0,0,0,.85);
+ background-color:#ecf0f1;
+ border:1px solid rgba(0, 0, 0, 0.35);
+ border-radius:.2rem
+}
+.dark-mode code.highlighter-rouge{
+  background-color: #1a1d24;
+  
+}
+ a > .highlighter-rouge {
+   padding-bottom: 0;
+   color: inherit;
+}
+ a:hover > .highlighter-rouge {
+   border-bottom: none;
+}
+ blockquote code.highlighter-rouge {
+   color: inherit;
+}
+ td.rouge-code {
+   padding-left: 1.5rem;
+   padding-right: 1.5rem;
+}
+ td.rouge-code a {
+   color: inherit !important;
+   border-bottom: none !important;
+   pointer-events: none;
+}
+ 

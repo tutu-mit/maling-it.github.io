@@ -1,0 +1,18 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="id" xml:lang="id">
+{% include head.html %}
+<body class="dark-mode with-custom-webkit-scrollbars with-custom-css-scrollbars" data-set-preferred-mode-onload="true" >
+	{% include search-result.html %}
+	<div class="page-wrapper with-sidebar with-navbar with-transitions" data-sidebar-type="overlayed-all" data-sidebar-hidden="hidden">
+	{% include sidebar.html %}
+		{% include sticky-alert.html %}
+		{{ content }}
+	</div>
+	{% include search-loader.html %}
+	{% include js-script.html %}
+</body>
+</html>

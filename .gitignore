@@ -1,0 +1,11 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+_templ
+_node/
+assets/logo-fancy.svg
+assets/gps.png
+rcm
+node_modules/

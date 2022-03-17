@@ -1,0 +1,82 @@
+---
+layout: default
+---
+{% include navbar.html %}
+<div class="content-wrapper zxbg">
+    <div id="top"></div>
+      <!-- Container-fluid -->
+      <div class="container-fluid">
+        <!-- First comes a content container with the main title -->
+            <div class="container-lg h-full">
+                <div class="row h-full">
+                    <div class="col-md-10 offset-md-1">
+                    <div id="content" class="content mt-0">
+                        <div class="card border border-top-0 text-center m-0">
+                        <h1 role="heading" aria-level="1" class="text-center font-weight-bold font-size-24 entry-title content-title">{{ page.title | capitalize }}</h1>
+                        <hr/>
+                             <span class="text-center ml-0">
+                                <i class="fa fa-calendar mr-5"></i> {{ page.date | date_to_string }}
+                            </span>
+                            <span class="dot"></span>
+                            {% include rt.html content=content %}
+                            <span class="text-center">
+                        {% include sharing.html %}
+                                
+                            </span>
+                      </div>
+                      <div class="post-content">
+                  {% include defcontent.html content=content %}                                  
+                      </div>                          
+                </div>
+                <div class="col-12">
+                    <span class="">
+                        {% for tg in page.tags %}
+                            <a class="badge" href="{{ site.url }}/tags/{{tg}}">#{{ tg }}</a>
+                        {% endfor %}
+                    </span>
+                </div>
+                      {% assign author = site.data.author[page.author] %}
+                        {% if author %}
+                        <div class="col-12">
+                        <span class="card m-5 ats-card bg-transparent mw-full m-0 p-0 d-flex">
+                            <div class="w-60 h-60 m-10 align-self-center">
+                                <img src="{{ author.img }}" class="d-block w-60 h-60 rounded-circle" alt="image {{ author.name }}">
+                            </div>
+                            <div class="flex-grow-1 d-flex align-items-center">
+                                <div class="p-10 w-full m-auto">
+                                    <p class="m-0 mt-5 text-muted font-size-12">
+                                        {{ site.data.label.writtenby | default: 'ditulis' }}
+                                    </p>
+                                    <p rel="author" title="Posts by {{ author.name | capitalize }}" class="m-0 font-weight-medium font-size-16 text-dark-lm text-light-dm">
+                                        {{ author.name | capitalize }}
+                                    </p>
+                                    <a href="{{ '/info/' | relative_url }}{{ author.name }}" class="m-0 mt-5 text-muted font-size-12">
+                                        Lihat profil 
+                                    </a>
+                                </div>
+                            </div>
+                        </span>
+                        </div>
+                        {% endif %}
+                        <hr/>
+                        <div class="col-12">
+                        <span class="card m-5 hidden-lm ats-card bg-transparent mw-full m-0 p-0 d-flex">
+                            <script src="https://utteranc.es/client.js" repo="{{ site.comment }}" issue-term="title" label="Comment" theme="dark-blue"
+                                crossorigin="anonymous" async>
+                                </script>
+                        </span>
+                        <span class="card m-5 hidden-dm ats-card bg-transparent mw-full m-0 p-0 d-flex">
+                            <script src="https://utteranc.es/client.js" repo="{{ site.comment }}" issue-term="title" label="Comment" theme="github-light"
+                                crossorigin="anonymous" async>
+                                </script>
+                        </span>
+                        </div>
+                        {% include trending-post.html %}
+                        {% include navigate.html %}
+                        {% include footer.html %}
+
+                </div>
+            </div>
+      </div>
+  </div>
+</div>

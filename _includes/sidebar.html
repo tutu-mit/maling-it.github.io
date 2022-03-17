@@ -1,0 +1,35 @@
+
+    <div class="sidebar-overlay" onclick="zxce3.toggleSidebar()"></div>
+    <div class="sidebar">
+      <div class="sidebar-menu">
+        <h5 class="font-weight-bolder sidebar-title">Pages <a href="#" class="ml-5 text-decoration-none">#</a></h5>
+        {% for page in site.pages limit:3 %}
+        <a href="{{ page.url | relative_url }}" class="sidebar-link">{{ page.title | capitalize }}</a>        
+        {% endfor %}
+        <br />
+        <h5 class="font-weight-bolder sidebar-title">Blog <a href="{{ '/all/' | relative_url }}" class="ml-5 text-decoration-none">#</a></h5>
+        <div class="sidebar-divider"></div>
+        {% for cat in site.categories %}
+        <a href="{{cat | first | relative_url}}/" class="sidebar-link">{{ cat | first | replace: 'js', 'javascript' | replace: 'nodejavascript', 'nodejs'  | capitalize }}</a>
+        {% endfor %}
+        <br />
+        <h5 class="font-weight-bolder sidebar-title">Tools <a href="{{ '/tools/' | relative_url }}" class="ml-5 text-decoration-none">#</a></h5>
+        <div class="sidebar-divider"></div>
+        {% for tools in site.tools %}
+        <a href="{{ tools.url | relative_url }}" class="sidebar-link">{{ tools.title | capitalize }}</a>
+        {% endfor %}
+  <br />
+</div> 
+        <div class="sidebar-divider"></div>
+
+        <div class="sidebar-content">
+          <span class="text-center">
+<div class="share mt-15">
+    <a data-toggle="tooltip" data-placement="top" data-title="Twitter" target="_blank" rel="noopener" aria-label="Twitter" class="btn btn-square bg-dark-light-dm" href="#"><i class="bi bi-twitter"></i></a>
+    <a data-toggle="tooltip" data-placement="top" data-title="Facebook" target="_blank" rel="noopener" aria-label="Facebook" class="btn btn-square bg-dark-light-dm" href="#"><i class="bi bi-facebook"></i></a>
+    <a data-toggle="tooltip" data-placement="top" data-title="Mode Theme" target="_blank" rel="noopener" aria-label="mode" class="btn btn-square bg-dark-light-dm" onclick="zxce3.toggleDarkMode()"><i class="bi-moon-fill hidden-dm" aria-hidden="true"></i>
+              <i class="bi-sun-fill hidden-lm" aria-hidden="true"></i></a>
+</div>
+</span>
+        </div>
+</div>

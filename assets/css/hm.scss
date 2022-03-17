@@ -1,0 +1,10 @@
+---
+layout: compress
+---
+
+@import 'code';
+@import 'icons';
+
+.lineno {
+  @extend .border-right !optional;
+}

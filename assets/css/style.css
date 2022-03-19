@@ -1,7 +1,15 @@
 ---
 layout: compress
 ---
-
+.cat-title{
+  margin-bottom: 0;
+  font-size: 1.5em;
+  margin-top: 1em !important;
+  
+}
+.tags{
+  margin-top: 1.5em !important;
+}
 .utterances {
       position: initial !important;
 }
@@ -147,6 +155,9 @@ layout: compress
 }
 .c-git {
   background-color: #f34f29 !important;
+}
+.c-blog {
+  background-color: #818181 !important;
 }
 /*another*/
 .logo img{

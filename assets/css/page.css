@@ -5,7 +5,7 @@ layout: compress
 /* ZC window */
 
 .zc-window .zc-window-top-row {
-    padding: 1rem 0rem 0rem 1rem;
+    /* padding: 1rem 0rem 0rem 1rem; */
     margin-right: 1rem;
     background-color: #ecf0f1;
     border-top-left-radius: 0.4rem;

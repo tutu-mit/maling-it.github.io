@@ -3,18 +3,13 @@ layout: default
 ---
 {% include navbar.html %}
 <div class="content-wrapper zxbg">
-    <div id="top"></div>
-
-      <!-- Container-fluid -->
       <div class="container-fluid">
-        <!-- First comes a content container with the main title -->
       <div class="container-lg h-full">
                 {% assign author = site.data.author[page.title] %}
                 {% if author %}
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="content">
-                            <!-- Header, content, and CTAs start -->
                             <img class="zxa-author mb-15 img-fluid rounded-circle" src="{{ author.img }}">
 
                             <h1 class="hero-header m-0 text-center">
@@ -26,13 +21,14 @@ layout: default
                             {% include author-link.html %}
                             {% include author-post.html %}
                         </div>
-{% include footer.html %}
+                    {% include footer.html %}
 
                     </div>
                 </div>
                         {% else %}
                 <div class="row h-full">
                     <div class="col-md-10 offset-md-1">
+                      {%- unless page.head == false -%}
                       <div class="card shadow-lg text-center m-0">
                         {% if page.layout == 'category' %}
                         <img class="zxa-author h-100 w-auto mb-15 img-fluid" src="https://raw.githubusercontent.com/Zxce3/Zxce3/main/icons/{{ page.title | replace: 'js', 'javascript' | replace: 'nodejavascript', 'nodejs' | replace: 'html', 'html5' | replace: 'css', 'css3'  | append:'-logo.svg'}}">
@@ -45,10 +41,11 @@ layout: default
                         <hr>
                         {% include sharing.html %}
                       </div>
+                      {%- endunless -%}
                       <div class="border-0 content">
                         {{ content }}
                       </div>
-{% include footer.html %}
+                      {% include footer.html %}
                 </div>
             </div>
                         {% endif %}

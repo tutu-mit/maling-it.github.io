@@ -3,12 +3,11 @@ title: MalingIT
 email: your-email@example.com
 description: Website malingIT
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://maling-it.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 comment: maling-it/maling-it.github.io
 # Build settings
-paginate: 6
 plugins:
   - jekyll-feed
   - jekyll-archives
@@ -106,3 +105,15 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /:name/
+
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 1
+  permalink: '/:num/'
+  title: '⚡️Terbaru'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  indexpage: index
+  extension: html

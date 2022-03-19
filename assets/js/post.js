@@ -9,11 +9,9 @@ function copyCode(elem, containerId) {
     document.execCommand("copy");
     window.getSelection().removeAllRanges();// to deselect
 
-    var alertContent = "Kode berhasil di copy ke clipboard.";
     // Built-in function
     zxce3.initStickyAlert({
-      content: alertContent,
-      title: "Berhasil di copy",
+      title: "Success copy",
       alertType: "alert-success",
       fillType: "filled",
       hasDismissButton: true,
@@ -23,30 +21,12 @@ function copyCode(elem, containerId) {
 // Set code-block
 var codeBl = document.querySelectorAll('.highlight');
 var cpbtn = document.querySelectorAll('.cpbtn');
-var chn = document.querySelectorAll('.chn');
 // Set Id
 for (var i = 0; i < codeBl.length; i++)
     codeBl[i].id = 'code-block-' + i;
 // Set Attr
 for (var i = 0; i < cpbtn.length; i++)
     cpbtn[i].setAttribute("onclick", "copyCode(this, 'code-block-" + i + "')");
-
-// Set Attr
-for (var i = 0; i < chn.length; i++)
-    chn[i].setAttribute("onclick", "change(this, 'code-block-" + i + "')");
-
-
-
-    // D-none for codeblock
-function change(elem, containerId) {
-    var swq = document.getElementById(containerId)
-    if (swq.classList.contains('d-none')) {
-      swq.classList.remove('d-none')
-    } else {
-      swq.classList.add('d-none')
-    }
-};
-
 
     function prints(content) {
         var printContents = document.getElementById(content).innerHTML;

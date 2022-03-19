@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Apa itu malingIT?"
+category: blog
 ---
 
 ## Maling IT

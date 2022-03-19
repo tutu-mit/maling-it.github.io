@@ -1,8 +1,8 @@
 
-<nav class="navbar shadow-lg">          
+<nav class="navbar justify-content-between shadow-lg">          
     {%- unless page.layout == "home" -%}
     <a href="{{ site.url | relative_url }}" class="navbar-brand logo ml-10 font-size-16 ml-sm-15">
-        <img src="{{ 'assets/zxce3.svg' | relative_url }}" class="mr-5 mr-sm-10" alt="Zxce3-logo">
+        <img src="{{ 'assets/' | relative_url }}{{ site.title | downcase }}.svg" class="mr-5 mr-sm-10" alt="{{ site.title | downcase }}-logo">
     </a>
       {%- endunless -%}
       {% if page.layout == "home" %}
@@ -69,7 +69,7 @@
                 </button>
 
             <button class="btn mr-5 navbar-menu-btn hidden-md-and-up" onclick="zxce3.toggleSidebar()" aria-haspopup="true" aria-expanded="false">
-                <i class="menu icon"></i>
+                <i class="bi bi-bricks"></i>
             </button>
     </div>
 </nav>

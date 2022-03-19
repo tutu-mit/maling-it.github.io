@@ -21,19 +21,17 @@ layout: default
                             {% include rt.html content=content %}
                             <span class="text-center">
                         {% include sharing.html %}
-                                
+                            </span>
+                            <hr/>
+                            <span class="text-center">
+                        {% for tg in page.tags %}
+                        <a class="badge" href="{{ site.url }}/tags/{{tg}}">#{{ tg }}</a>
+                            {% endfor %}
                             </span>
                       </div>
                       <div class="post-content">
                   {% include defcontent.html content=content %}                                  
                       </div>                          
-                </div>
-                <div class="col-12">
-                    <span class="">
-                        {% for tg in page.tags %}
-                            <a class="badge" href="{{ site.url }}/tags/{{tg}}">#{{ tg }}</a>
-                        {% endfor %}
-                    </span>
                 </div>
                       {% assign author = site.data.author[page.author] %}
                         {% if author %}
@@ -60,16 +58,25 @@ layout: default
                         {% endif %}
                         <hr/>
                         <div class="col-12">
-                        <span class="card m-5 hidden-lm ats-card bg-transparent mw-full m-0 p-0 d-flex">
-                            <script src="https://utteranc.es/client.js" repo="{{ site.comment }}" issue-term="title" label="Comment" theme="dark-blue"
-                                crossorigin="anonymous" async>
-                                </script>
-                        </span>
-                        <span class="card m-5 hidden-dm ats-card bg-transparent mw-full m-0 p-0 d-flex">
-                            <script src="https://utteranc.es/client.js" repo="{{ site.comment }}" issue-term="title" label="Comment" theme="github-light"
-                                crossorigin="anonymous" async>
-                                </script>
-                        </span>
+                            <details class="collapse-panel border-0 mw-full mt-20">
+                                <summary class="collapse-header without-arrow">
+                                  <span class="hidden-collapse-open text-muted"><i class="bi bi-chat"></i></span>
+                                  <span class="hidden-collapse-closed text-muted"><i class="bi bi-chat-dots"></i></span>
+                                  <span class="ml-5">Komentar</span> <!-- ml-5 = margin-left: 0.5rem (5px) -->
+                                </summary>
+                                <div class="collapse-content">
+                                    <span class="card m-5 hidden-lm ats-card bg-transparent mw-full m-0 p-0 d-flex">
+                                        <script src="https://utteranc.es/client.js" repo="{{ site.comment }}" issue-term="title" label="Comment" theme="dark-blue"
+                                            crossorigin="anonymous" async>
+                                            </script>
+                                    </span>
+                                    <span class="card m-5 hidden-dm ats-card bg-transparent mw-full m-0 p-0 d-flex">
+                                        <script src="https://utteranc.es/client.js" repo="{{ site.comment }}" issue-term="title" label="Comment" theme="github-light"
+                                            crossorigin="anonymous" async>
+                                            </script>
+                                    </span>                                
+                                </div>
+                              </details>
                         </div>
                         {% include trending-post.html %}
                         {% include navigate.html %}

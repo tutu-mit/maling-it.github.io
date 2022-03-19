@@ -7,7 +7,8 @@ gem "kramdown", "~> 2.3"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.16"
   gem "jekyll-archives"
-  gem "jekyll-paginate"
+  gem "jekyll-paginate-v2"
+  gem 'jekyll-seo-tag', '~> 2.8'
   # gem "jekyll-admin"
 end
 

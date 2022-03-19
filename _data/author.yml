@@ -1,33 +1,12 @@
 # Author details for posts.
 
-belajarpython:
-    name: belajarpythoncom
-    fname: belajarpython.com
-    web: https://belajarpython.com
-    img: https://avatars.githubusercontent.com/u/37734561?s=200&v=4
-    bio: Indonesian Python Programming Tutorial
-    email: mail@belajarpython.com
-    pfs:
-      -
-        type: Github
-        icon: "bi-github"
-        link: "https://github.com/belajarpythoncom"
-      -
-        type: Website
-        icon: "bi-link"
-        link: "https://belajarpython.com/"
-      -
-        type: email
-        icon: "bi-envelope"
-        link: "mailto:mail@belajarpython.com"
-    
 memet:
     name: memet
     fname: memet zx
     email: memetpea25@gmail.com
     web: '#'
     bio: i'm noobie not a pros but maybe
-    img: 'https://avatars.githubusercontent.com/u/57337800?v=4'
+    img: 'https://github.com/zxce3.png'
     pfs:
       -
         type: Github
@@ -52,7 +31,7 @@ catur:
     email: wong801@gmail.com
     web: '#'
     bio: call me wong
-    img: 'https://avatars.githubusercontent.com/u/52611164?v=4'
+    img: 'https://github.com/wong801.png'
     github: wong801
     twitter: null
     facebook: wong801
@@ -69,15 +48,3 @@ catur:
         type: Telegram
         icon: "bi-telegram"
         link: "#" 
-
-
-# Author details for pages.
-aut:
-    -
-        name: memet
-        bio: i'm noobie not a pros but maybe
-        img: 'https://avatars.githubusercontent.com/u/57337800?v=4'
-    -
-        name: catur
-        bio: call me wong
-        img: 'https://avatars.githubusercontent.com/u/52611164?v=4'

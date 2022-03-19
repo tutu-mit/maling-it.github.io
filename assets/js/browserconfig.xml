@@ -6,6 +6,10 @@ permalink: /assets/favicons/browserconfig.xml
 <browserconfig>
   <msapplication>
     <tile>
+      <square70x70logo src="{{ '/mstile-70x70.png'| relative_url }}"/>
+      <square150x150logo src="{{ '/mstile-150x150.png'| relative_url }}"/>
+      <square310x310logo src="{{'/mstile-310x310.png' | relative_url }}"/>
+      <wide310x150logo src="{{ '/mstile-310x150.png' | relative_url }}"/>
       <square150x150logo src="{{ '/assets/favicons/mstile-150x150.png' | relative_url }}" />
       <TileColor>#da532c</TileColor>
     </tile>

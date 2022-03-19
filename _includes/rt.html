@@ -1,7 +1,10 @@
-                            <!--
+<!--
   Calculate the post's reading time, and display the word count in tooltip
  -->
-{% assign words = include.content | strip_html | number_of_words: "auto" %}
+{%- capture word -%}
+{{ include.content | strip_html | number_of_words: "auto" }}
+{%- endcapture -%}
+{% assign words = word %}
 
 <!-- words per minute  -->
 {% assign wpm = 180 %}

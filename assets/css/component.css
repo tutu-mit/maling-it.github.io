@@ -1,0 +1,318 @@
+/* Nope */
+.cat-title{
+  margin-bottom: 0;
+  font-size: 1.5em;
+  margin-top: 1em !important;
+}
+.tags{
+  margin-top: 1.5em !important;
+}
+.utterances {
+      position: initial !important;
+}
+.btn{
+  -webkit-appearance: none;
+}
+.btns:hover{
+  height: 4rem;
+  line-height: 4rem;
+  padding: 0 2rem;
+  font-size: 1.8rem;
+  background-position: right center; /* change the direction of the change here */
+}
+.btns {
+  transition: 0.5s;
+  background-size: 200% auto;
+  border-radius: 10px;
+ }
+/*dot*/
+.dot {
+  height: 3px;
+  width: 3px;
+  background-color: #000;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dark-mode .dot {
+  background-color: #fff;
+}
+.rounded-40 {
+    border-radius: 40%!important;
+}
+.post-content{
+  margin-top: 2rem !important;
+}
+/*custom card*/
+.cs-zx {
+ margin:1em .7em;
+ border-radius:5px;
+ /*border-bottom-right-radius:15px;*/
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ box-shadow:1px 1px 15px rgba(67,38,100,0.15);
+ padding:1.85rem;
+}
+.cs-zx:hover{
+ box-shadow: 0 0 0 0 rgb(182, 35, 19);
+ /* transform:translateZ(0.5em) rotate(1deg) scale(1); */
+ transform: translate3d(5px, 5px, 5px);
+ border: 1px 1px 15px rgba(67,38,100,0.15) ;
+ /*animation:psychedelic 1s infinite*/
+}
+.cs-zx h3 {
+ font-size:1.4em;
+ text-align:center;
+ font-weight:300;
+ margin:0
+}
+/* category colour */
+.c-python{
+  background-color: #326b9b !important;
+}
+.c-html{
+  background-color: #000 linear-gradient(135deg,#35A875 10px,rgba(94, 55, 55, 0.01) 0);
+}
+.c-angular,
+.ng {
+ background-color:#DD0031 !important;
+}
+.c-ionic,
+.ionic {
+ background-color:#4B8DFB !important;
+}
+.c-typescript,
+.typescript {
+ background-color:#007ACC !important;
+}
+.c-css,
+.css {
+ background-color:#3399FE !important;
+}
+.c-js,
+.js {
+ background-color:#F7DF1E !important;
+}
+.c-html,
+.web-components {
+ background-color:#F16528 !important;
+}
+.c-sass {
+ background-color:#CF649A !important;
+}
+.c-svg {
+ background-color:#FF9900 !important;
+}
+.c-vuejs,
+.vuejs {
+ background-color:#41B883 !important;
+}
+.c-jekyll {
+ background-color:#D20000 !important;
+}
+.c-react,
+.react {
+ background-color:#61dafb !important;
+}
+.c-graphql {
+ background-color:#E535AB !important;
+}
+.c-flow {
+ background-color:#E8BD36 !important;
+}
+.c-nodejs,
+.nodejs {
+ background-color:#336633 !important;
+}
+.c-rxjs {
+ background-color:#64008D !important;
+}
+.c-stencil {
+ background-color:#000 !important;
+}
+.c-workflow,
+.workflow {
+ background-color:#f442c2 !important;
+}
+.c-polymer {
+ background-color:#FF4C89 !important;
+}
+.c-redux {
+ background-color:#764ABC !important;
+}
+.c-gatsbyjs {
+ background-color:rebeccapurple !important;
+}
+.c-svelte,
+.svelte {
+ background-color:#FF3E00 !important;
+}
+.c-flutter {
+ background-color:#0276e8 !important;
+}
+.c-git {
+  background-color: #f34f29 !important;
+}
+.c-blog {
+  background-color: #818181 !important;
+}
+/*another*/
+.logo img{
+  height: 7rem !important;
+  width: 7rem !important;
+	margin-top: 2rem !important;
+}
+@media (max-width: 577px) {
+.logo img{
+  height: 5rem !important;
+  width: 5rem !important;
+  margin-top: 1rem !important;
+}
+
+}
+.logo img:hover{
+ box-shadow: 0 0 0 0 rgb(182, 35, 19);
+ transform:translateY(1em) rotate(-4deg) scale(1.15);
+ animation:psychedelic 1s infinite
+}
+.page-title{
+ text-shadow: 0 0 0 0 rgb(182, 35, 19);
+ /*transform:translateY(1em) rotate(-4deg) scale(1.15);*/
+  animation: testing 2s linear infinite;
+}
+        @keyframes testing {
+            0% {
+                background: linear-gradient(
+                        #008000, #00FF00);
+                -webkit-background-clip: text;
+            }
+
+            100% {
+                background: linear-gradient(
+                        #3CE7D7, #000FFF);
+                -webkit-background-clip: text;
+            }
+        }
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgb(182, 35, 19);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgb(182, 35, 19);
+  }
+}
+
+.zxce3-logo:hover {
+ box-shadow: 0 0 0 0 rgb(182, 35, 19);
+ transform:translateY(1em) rotate(-2deg) scale(1.15);
+ animation:psychedelic 15s infinite
+}
+@keyframes psychedelic {
+ 0% {
+  filter:hue-rotate(0)
+ }
+ 50% {
+  filter:hue-rotate(360deg)
+ }
+}
+
+.sidebar .cls {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  /*width: 8rem;*/
+  height: 2.4rem;
+  line-height: 2.4rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: 5;
+}
+
+
+.dark-mode .zxbg {
+  background: #111417 !important;
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.font-size-40{
+  font-size: 4rem !important;
+}
+
+.zxlogo{
+  margin: 2em 0 0;
+  width: 180px;
+  height: 180px;
+}
+.card-z{
+  border-radius: 1.4rem !important;
+}
+.card-z:hover{
+  box-shadow: 0 0.5em 0.5em -0.4em rgb(55, 44, 189) !important;
+  transform: translateY(-0.25em);
+}
+
+@keyframes type{
+  from { width: 0; }
+}
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; }
+}
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+.blink{
+    animation: blink 1s infinite;
+}
+.blink2{
+    animation: blink 1.5s infinite;
+}
+.type{
+    animation: type 4s steps(60, end);
+}
+
+.med-icon{
+   color:rgba(255,255,255,.65);
+ background-color:rgba(255,255,255,.05);
+ border-color:transparent
+}
+
+ol.ui.list.lower-alpha {
+  counter-reset: list;
+  margin-left: 1.2em;
+}
+ol.ui.list.lower-alpha li:before {
+  counter-increment: list;
+  content: counter(list, lower-alpha) ") ";
+  margin-left: -1.2em;
+}
+ol.ui.list.upper-alpha {
+  counter-reset: list;
+}
+ol.ui.list.upper-alpha li:before {
+  counter-increment: list;
+  content: counter(list, upper-alpha) ") ";
+}
+ol.ui.list.lower-roman {
+  counter-reset: list;
+}
+ol.ui.list.lower-roman li:before {
+  counter-increment: list;
+  content: counter(list, lower-roman);
+}
+ol.ui.list.upper-roman {
+  counter-reset: list;
+}
+ol.ui.list.upper-roman li:before {
+  counter-increment: list;
+  content: counter(list, upper-roman);
+}

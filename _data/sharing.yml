@@ -6,13 +6,13 @@ sidebar:
     icon: "bi-twitter"
     link: "https://twitter.com/zxce3_"
   -
-    type: Facebook
-    icon: "bi-facebook"
-    link: "https://www.facebook.com/zxce3ofc"
+    type: Github
+    icon: "bi-github"
+    link: "https://github.com/maling-it"
   -
     type: Telegram
     icon: "bi-telegram"
-    link: "https://t.me/zxce1"
+    link: "https://t.me/malingit"
 
   # Uncomment below if you need to.
   # -

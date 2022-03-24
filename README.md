@@ -1,4 +1,6 @@
 # MalingIT
+[![Build and Deploy to Github Pages](https://github.com/maling-it/maling-it.github.io/actions/workflows/build-and-deploy.yml/badge.svg)](https://github.com/maling-it/maling-it.github.io/actions/workflows/build-and-deploy.yml)
+
 this is the source code of malingit.github.io
 
 ## Directory structure

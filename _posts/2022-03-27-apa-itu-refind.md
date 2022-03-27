@@ -21,13 +21,14 @@ Saya pernah mengalami semua diatas dan akhirnya mencari referensi untuk menyeles
  
  rEFInd sendiri merupakan kembangan dari rEFIt yang tidak ada perkembangan sejak tahun 2010.
  
- ### Apa keuntungan yang didapatkan menggunakan rEFInd??
+ ## Apa keuntungan yang didapatkan menggunakan rEFInd??
  
  - Tidak perlu masuk BIOS lagi untuk mengubah urutan boot
  - Dukungan Tema yang bisa di ubah sesuka hati
  - dan banyak lagi
 
- ### Support Instalasi
+ ## Support Instalasi
+
 - Binary ZIP file
 - Binary RPM file
 - Binary Debian Package
@@ -36,11 +37,11 @@ Saya pernah mengalami semua diatas dan akhirnya mencari referensi untuk menyeles
 - Source code Git
 
 Silahkan Kunjungi link berikut
-[http://www.rodsbooks.com/refind/getting.html]
+[rEFInd](http://www.rodsbooks.com/refind/getting.html)
 
 
 Source
-- rEFInd [http://www.rodsbooks.com/refind/]
+- [rEFInd](http://www.rodsbooks.com/refind/)
 
 
 Sekian.

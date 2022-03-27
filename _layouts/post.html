@@ -15,7 +15,7 @@ layout: default
                         <h1 role="heading" aria-level="1" class="text-center font-weight-bold font-size-24 entry-title content-title">{{ page.title | capitalize }}</h1>
                         <hr/>
                              <span class="text-center ml-0">
-                                <i class="fa fa-calendar mr-5"></i> {{ page.date | date_to_string }}
+                                <i class="bi bi-calendar-event mr-5"></i> {{ page.date | date_to_string }} - <i class="bi bi-person"></i> {{ page.author | capitalize }}
                             </span>
                             <span class="text-center">
                         {% include sharing.html %}

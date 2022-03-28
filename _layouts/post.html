@@ -17,9 +17,6 @@ layout: default
                              <span class="text-center ml-0">
                                 <i class="bi bi-calendar-event mr-5"></i> {{ page.date | date_to_string }} - <i class="bi bi-person"></i> {{ page.author | capitalize }}
                             </span>
-                            <span class="text-center">
-                        {% include sharing.html %}
-                            </span>
                             <hr/>
                             <span class="text-center">
                         {% for tg in page.tags %}
@@ -31,6 +28,10 @@ layout: default
                   {% include defcontent.html content=content %}                                  
                       </div>                          
                 </div>
+                <hr/>
+                <span class="text-center">
+                {% include sharing.html %}
+                </span>
                       {% assign author = site.data.author[page.author] %}
                         {% if author %}
                         <div class="col-12">

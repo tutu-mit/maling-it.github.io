@@ -45,7 +45,7 @@ Saya pernah mengalami semua diatas dan akhirnya mencari referensi untuk menyeles
  sudo apt-get install refind
 {% endhighlight %}
 
-### Instalasi Void Linux
+#### Instalasi Void Linux
 {% highlight bash %}
 search refind
 get refind

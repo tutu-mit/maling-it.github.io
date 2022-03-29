@@ -8,6 +8,13 @@ function copyCode(elem, containerId) {
     window.getSelection().addRange(range); // to select text
     document.execCommand("copy");
     window.getSelection().removeAllRanges();// to deselect
+    // Show confirmation
+    elem.innerHTML = "<i class='bi bi-clipboard-check' aria-hidden='true'></i> Copied!";
+
+    // Hide confirmation
+    setTimeout(function() {
+        elem.innerHTML = "<i class='bi bi-clipboard' aria-hidden='true'></i> Copy";
+    }, 2000);
 
     // Built-in function
     zxce3.initStickyAlert({

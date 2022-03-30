@@ -14,6 +14,6 @@ jobs:
     steps:        
     - uses: avkviring/telegram-github-action@v0.0.15
       env:
-        telegram_to: "-761730816"
-        telegram_token: "5048625452:AAFeDR5IKx-ZOLaYXWRcq6hCB8NXof8JsTo"
+        telegram_to: ${{ secrets.RUMAHTOKEN }}
+        telegram_token: ${{ secrets.BOT }}
         event: ${{ toJson(github.event) }}

@@ -13,11 +13,6 @@
         <a href="{{cat | first | relative_url}}/" class="sidebar-link">{{ cat | first | replace: 'js', 'javascript' | replace: 'nodejavascript', 'nodejs'  | capitalize }}</a>
         {% endfor %}
         <br />
-        <h5 class="font-weight-bolder sidebar-title">Tools <a href="{{ '/tools/' | relative_url }}" class="ml-5 text-decoration-none">#</a></h5>
-        <div class="sidebar-divider"></div>
-        {% for tools in site.tools %}
-        <a href="{{ tools.url | relative_url }}" class="sidebar-link">{{ tools.title | capitalize }}</a>
-        {% endfor %}
   <br />
 </div> 
         <div class="sidebar-divider"></div>

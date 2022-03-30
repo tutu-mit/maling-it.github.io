@@ -1,3 +1,4 @@
+
 /* Nope */
 .cat-title{
   margin-bottom: 0;
@@ -41,6 +42,30 @@
 }
 .post-content{
   margin-top: 2rem !important;
+}
+.post-content img {
+  width: auto;
+  margin: 0 auto;
+  max-width: 100%;
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+p {
+  font-size: larger !important;
+}
+blockquote {
+  border-left: 4px solid #00abff99;
+  margin: 40px 0;
+  padding: 5px 30px;
+  background-color: #15c8ff29;
+  border-radius: 5px;
+}
+blockquote p {
+  /* font-style: italic; */
+  margin: 0;
+  width: 100%;
 }
 /*custom card*/
 .cs-zx {
@@ -157,7 +182,13 @@
   background-color: #818181 !important;
 }
 .c-linux {
-  background-color: #ffd133 !important;
+  background-color: #be8200 !important;
+}
+.c-c {
+  background-color: #659ad3 !important;
+}
+.c-cli {
+  background-color: #304123 !important;
 }
 /*another*/
 .logo img{
@@ -319,3 +350,4 @@ ol.ui.list.upper-roman li:before {
   counter-increment: list;
   content: counter(list, upper-roman);
 }
+

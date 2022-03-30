@@ -1,7 +1,9 @@
 ---
-layout: post
+layout: redirect
 title:  "Apa itu malingIT?"
 category: blog
+redirect_to: /info/
+
 ---
 
 ## Maling IT

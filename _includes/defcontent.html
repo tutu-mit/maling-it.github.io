@@ -24,6 +24,17 @@
   {% assign _content = _content | | replace: '<h3', '<h3 class="ui border-bottom font-weight-bold" ' %}
 {% endif %}
 
+{% if _content contains '<h4' %}
+  {% assign _content = _content | | replace: '<h4', '<h4 class="ui border-bottom font-weight-bold" ' %}
+{% endif %}
+
+{% if _content contains '<h5' %}
+  {% assign _content = _content | | replace: '<h5', '<h5 class="ui border-bottom font-weight-bold" ' %}
+{% endif %}
+
+{% if _content contains '<h6' %}
+  {% assign _content = _content | | replace: '<h6', '<h6 class="ui border-bottom font-weight-bold" ' %}
+{% endif %}
 
 {% if _content contains '<ul>' %}
   {% assign _content = _content | | replace: '<ul>', '<ul class="ui list">' %}
@@ -109,10 +120,6 @@
 {% endif %}
 
 
-{% if _content contains '<blockquote>' %}
-{% assign _content = _content | replace: '<blockquote>', '<blockquote class="bquote alert">' %}
-{% endif %}
-
 {% if _content contains '<img src="' %}
 
   {% if site.img_cdn != '' %}
@@ -123,7 +130,7 @@
 
   {% assign _content = _content | replace: '<img src="/', img_path_replacement %}
 
-  {% assign _content = _content | replace: '<img ', '<img class="img-fluid w-full h-150"'  %}
+  {% assign _content = _content | replace: '<img ', '<img class="img-fluid shadow-lg rounded mw-full"'  %}
 {% endif %}
 
 <!-- return -->

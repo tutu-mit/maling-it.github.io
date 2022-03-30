@@ -16,10 +16,15 @@
     </a>
       {% endif %}
     <ul class="navbar-nav hidden-sm-and-down">
-        <li class="nav-item">
-          <a href="{{ '/archives/' | relative_url }}" class="nav-link">Archives</a>
-        </li>
-    <li class="nav-item dropdown">
+      {%- for category in site.categories -%}
+      <li class="nav-item">
+        <a href="{{category | first | relative_url}}/" class="nav-link">
+          {{ category | first | replace: 'js', 'javascript' | replace: 'nodejavascript', 'nodejs' | replace: 'html', 'HTML' | capitalize}}
+
+        </a>
+      </li>
+      {%- endfor -%}
+    <li class="nav-item d-none dropdown">
       <span class="nav-link" data-toggle="dropdown" id="nav-link-dropdown-toggle">
         Blog 
         <i class="mt-5 bi-caret-down" aria-hidden="true"></i> 
@@ -34,26 +39,6 @@
         <div class="dropdown-divider"></div>
         <div class="dropdown-content">
           <a href="{{'/category/' | relative_url}}" class="btn btn-block" role="button">
-            Semua
-            <i class="ml-5" aria-hidden="true"></i>
-          </a>
-        </div>
-      </div>
-    </li>    
-    <li class="nav-item dropdown">
-      <span class="nav-link" data-toggle="dropdown" id="nav-link-dropdown-toggle">
-        Tools 
-        <i class="mt-5 bi-caret-down" aria-hidden="true"></i> 
-      </span>
-      <div class="dropdown-menu dropdown-menu-center" aria-labelledby="nav-link-dropdown-toggle">
-        {% for tools in site.tools limit:6 %}
-        <a href="{{ tools.url | relative_url }}" class="dropdown-item">
-          {{ tools.title | capitalize }}
-        </a>
-        {% endfor %}        
-        <div class="dropdown-divider"></div>
-        <div class="dropdown-content">
-          <a href="{{'/tools/' | relative_url}}" class="btn btn-block" role="button">
             Semua
             <i class="ml-5" aria-hidden="true"></i>
           </a>

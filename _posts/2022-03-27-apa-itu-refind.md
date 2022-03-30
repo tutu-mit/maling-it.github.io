@@ -2,7 +2,7 @@
 title: apa itu rEFInd?
 author: memet
 category: linux
-tags: linux rEFInd boot
+tags: linux refind bootloader
 ---
 Beberapa hari terakhir banyak sekali yang mengalami kendala di grub2 seperti
 

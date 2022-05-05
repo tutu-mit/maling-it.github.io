@@ -75,9 +75,6 @@ ol li {
   margin-bottom: 0px !important;
 }
 
-ul li {
-  // margin: 5px;
-}
 @mixin dark-syntax {
   /* -----  My styles ------ */
   --highlight-bg-color: #252525;
@@ -181,4 +178,3 @@ code.highlighter-rouge {
    border-bottom: none !important;
    pointer-events: none;
 }
- 

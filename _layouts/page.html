@@ -1,14 +1,14 @@
 ---
 layout: default
 ---
-{% include navbar.html %}
 <div class="content-wrapper zxbg">
+{% include navbar.html %}
       <div class="container-fluid">
       <div class="container-lg h-full">
                 {% assign author = site.data.author[page.title] %}
                 {% if author %}
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-md-12">
                         <div class="content">
                             <img class="zxa-author mb-15 img-fluid rounded-circle" src="{{ author.img }}">
 
@@ -27,7 +27,7 @@ layout: default
                 </div>
                         {% else %}
                 <div class="row h-full">
-                    <div class="col-md-10 offset-md-1">
+                    <div class="col-md-12">
                       {%- unless page.head == false -%}
                       <div class="card shadow-lg text-center m-0">
                         {% if page.layout == 'category' %}
@@ -42,7 +42,7 @@ layout: default
                         {% include sharing.html %}
                       </div>
                       {%- endunless -%}
-                      <div class="border-0 content">
+                      <div class="border-0 mt-15">
                         {{ content }}
                       </div>
                       {% include footer.html %}

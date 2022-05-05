@@ -1,9 +1,9 @@
 
 <nav class="navbar justify-content-between">          
     {%- unless page.layout == "home" -%}
-    <a href="{{ site.url | relative_url }}" class="navbar-brand logo ml-10 font-size-16 ml-sm-15">
+    <a href="{{ site.url | relative_url }}" class="navbar-brand ml-10 font-size-16 ml-sm-15">
         <img src="{{ 'assets/' | relative_url }}{{ site.title | downcase }}.svg" class="mr-5 mr-sm-10" alt="{{ site.title | downcase }}-logo">
-    </a>
+    MalingIT</a>
       {%- endunless -%}
       {% if page.layout == "home" %}
     <a href="{{site.url}}{{ '/all/' | relative_url }}" class="navbar-brand ml-10 font-size-16 ml-sm-15">

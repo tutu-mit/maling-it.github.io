@@ -26,7 +26,17 @@ layout: default
             ⚡️Terbaru
         </p>
         <div class="content">
-                {% include card.html %}
+
+    <section class="cd-list hidden-sm-and-down overflow-x-scroll overflow-y-hidden w-full h-auto">
+        {% for p in site.posts %}
+            {% include card.html %}
+            {% endfor %}
+    </section>
+            <div class="hidden-md-and-up">
+                {% for p in site.posts %}
+                {% include post-card.html %}
+                {% endfor %}
+            </div>
         </div>
     </div>
 {% for cat in site.categories %}

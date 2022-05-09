@@ -190,6 +190,9 @@ blockquote p {
 .c-cli {
   background-color: #304123 !important;
 }
+.c-database {
+  background-color: #7383bf !important;
+}
 /*another*/
 .logo img{
   height: 7rem !important;
@@ -417,7 +420,7 @@ body{
   margin: 16px 10px;
 }
 .author-avatar img:hover{
-  filter: grayscale(50%);
+  filter: grayscale(10%);
 }
 
 .half-circle{
@@ -553,6 +556,9 @@ body{
 }
 .cs-cli {
   stroke: #304123 !important;
+}
+.cs-database{
+  stroke: #7383bf !important;
 }
 
 .cr {

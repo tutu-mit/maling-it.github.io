@@ -1,7 +1,7 @@
 ---
 title: Replikasi Database
 author: memet
-category: database
+category: linux
 tags: database 
 ---
 

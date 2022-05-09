@@ -2,6 +2,7 @@
 title: Replikasi Database
 author: memet
 category: database
+tags: database 
 ---
 
 ## A. Konsep Dasar Replikasi

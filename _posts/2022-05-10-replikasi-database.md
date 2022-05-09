@@ -29,8 +29,8 @@ Menyembunyikan perbedaan-perbedaan antara layanan replicated dan non-replicated
 
 ## B. Tujuan Replikasi
 Tujuan replikasi motivasi, yaitu :
-– Meningkatkan availabilitas data
-– Mempercepat evaluasi query jika ada replika fragmen atau satu relasi pada tempat lokal.
+- Meningkatkan availabilitas data
+- Mempercepat evaluasi query jika ada replika fragmen atau satu relasi pada tempat lokal.
 
 ## C. Jenis-jenis Replikasi
 
@@ -70,15 +70,15 @@ Salah satu strategi pencegah konflik adalah waktu proses transaksi update tidak 
 
 Pengelolaan penguncian objek yang terdistribusi dapat dilakukan dengan beberapa cara, yaitu :
 
--  `Secara terpusat (sentralisasi)`
+- `Secara terpusat (sentralisasi)`
 
 Pada cara terpusat, penanganan penguncian dilakukan dari satu tempat.
 
--  `Replika primer`
+- `Replika primer`
 
 Pada cara replika primer, penanganan penguncian dilakukan pada tempat replika primer berada.
 
--  `Terdistribusi penuh`
+- `Terdistribusi penuh`
 
 Pada cara terdistribusi penuh, maka penanganan penguncian dilakukan pada tempat replika yang akan dikunci. Cara ini lebih banyak digunakan.
 

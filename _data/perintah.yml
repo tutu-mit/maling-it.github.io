@@ -1,0 +1,49 @@
+per:
+  -
+    nama: man
+    desc: Perintah ini biasa digunakan untuk menampilkan halaman manual atau help dari suatu perintah. Format penulisannya `man` , perintah man sangat menolong kita untuk berjalan-jalan di teminal linux ini. Contoh `man man` akan menampilkan halaman manual dari `man`.
+  -
+    nama: cd
+    desc: Namanya terinspirasi dari `change directory`, digunakan untuk berpindah dari satu direktori ke direktori lainnya. Argumen yang biasa digunakan adalah alamat suatu direktori, baik relatif maupun mutlak. Jika digunakan tanpa argumen ia akan memanggil direktori `$HOME`. Contoh `cd /etc/X11` akan memindahkan direktori yang aktif ke `/etc/X11`. Ada dua argumen istimewa untuk perintah ini yaitu `.` dan `..` karena `cd .` akan memanggil direktori itu sendiri dan `cd ..` akan berpindah ke direktori di atasnya (naik satu tingkat).
+  -
+    nama: pwd
+    desc: Merupakan kependekan dari present working direktori, digunakan untuk melihat path lengkap dari direktori yang sedang aktif saat ini.
+  -
+    nama: ls
+    desc: Perintah ini digunakan untuk melihat isi suatu direktori. Penggunannya `ls /path`, `path` bisa berupa alamat mutlak atau relatif, jika digunakan tanpa argumen `/path` akan menampilkan isi direktori saat ini.
+  -
+    nama: mkdir
+    desc: Sesuai dengan namanya yang merupakan kependekan dari make directory, perintah ini digunakan untuk membuat direktori. Biasa dijalankan dengan menuliskan `mkdir /path`, jika argumen `/path` bukan merupakan alamat mutlak maka direktori yang dibuat akan relatif terhadap direktori saat ini. Contoh `mkdir /home/userkamu/coba` akan menghasilkan direktori coba di direktori home user userkamu.
+  -
+    nama: rmdir
+    desc: Nama aslinya adalah `remove directory`, digunakan untuk menghapus direktori. Namun ia hanya akan menghapus direktori yang kosong. Seperti saudaranya yang lain ia bisa digunakan dengan format `rmdir /path`.
+  -
+    nama: mv
+    desc: contoh `mv /path/asal /path/tujuan` akan memindahkan suatu berkas atau direktori dari path asal ke tujuan. Bisa juga digunakan untuk mengganti nama suatu berkas, dengan syarat `/path` harus sama.
+  -
+    nama: cp
+    desc: Untuk menyalin suatu berkas dari path asal ke path tujuan jalankan perintah `cp /path/asal /path/tujuan`. Berbeda dengan `mv` yang akan memusnahkan asalnya, `cp` akan mempertahankannya sehingga akan dihasilkan dua berkas yang sama.
+  -
+    nama: rm
+    desc: Berasal dari kata remove, digunakan untuk menghapus suatu berkas dengan perintah `rm /nama/berkas`, bisa juga digunakan untuk menghapus direktori yang tidak kosong dengan menyertakan opsi `-rf`.
+  -
+    nama: du
+    desc: Diambil dari disk usage, digunakan untuk mengestimasi pemakaian ruang disk, data akan ditampilkan per berkas. Jika digunakan tanpa argumen akan menampilkan pemakaian ruang disk pada direktori aktif. Format penulisannya `du /path/target`. Gunakan opsi `-h` untuk menampilkan hasil yang lebih mudah dibaca.
+  -
+    nama: df
+    desc: Disk free, digunakan untuk melihat kapasitas disk yang masih kosong/bebas. Gunakan opsi `-h` jika ingin hasil yang lebih enak dipandang.
+  -
+    nama: clear
+    desc: Self titled, digunakan untuk membersihkan terminal (layar).
+  -
+    nama: ps
+    desc: Menampilkan informasi tentang proses yang sedang aktif/berjalan di sistem. Ada banyak opsi yang bisa diberikan pada perintah ini, salau satunya adalah aux yang akan menampilkan seluruh proses dalam sistem.
+  -
+    nama: top
+    desc: Hampir sama dengan ps hanya saja top akan menampilkan informasi yang selalu up to date dan bersifat dinamis.
+  -
+    nama: cat 
+    desc: Berasal dari kata concatenate, digunakan untuk menampilkan isi dari suatu berkas ke keluaran standar (biasanya layar monitor). Dijalankan dengan mengetikkan `cat /nama/berkas`.
+  -
+    nama: echo
+    desc: Biasa digunakan untuk menampilkan string/karakter di layar monitor, namun bisa juga digunakan untuk membuat file dengan memanfaatkan output redirection. Perintah-perintah di atas hanyalah beberapa diantara perintah yang sangat kompleks yang terdapat di dunia Linux. Begitu pula penjelasan, argumen, dan opsi yang dijelaskan hanyalah sekelumit dari puluhan bahkan sampai ratusan argumen dan opsi untuk setiap perintah. Cara termudah untuk mendapatkan penjelasan tentang suatu perintah adalah membuka halaman manualnya.

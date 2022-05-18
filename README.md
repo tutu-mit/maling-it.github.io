@@ -43,7 +43,7 @@ Please make sure to update tests as appropriate.
 This theme is mainly built with [Jekyll](https://jekyllrb.com/) ecosystem, [Halfmoon](https://www.gethalfmoon.com/), [Boostrap Icons](https://icons.getbootstrap.com/) and some other wonderful tools (their copyright information can be found in the relevant files). The Logo design from [Here](https://t.me/malingIT/2).
 
 
-Last but not least, for all of you who read this
+Last but not least, thanks for all of you who read this
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

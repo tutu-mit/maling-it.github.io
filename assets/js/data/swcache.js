@@ -6,14 +6,13 @@ const resource = [
 
   /* --- CSS --- */
   '{{ "/assets/css/hm.css" | relative_url }}',
-  '{{ "/assets/css/style.css" | relative_url }}',
+  '{{ "/assets/css/component.css" | relative_url }}',
   '{{ "/assets/css/landing.css" | relative_url }}',
   '{{ "/assets/css/page.css" | relative_url }}',
   '{{ "/assets/css/syntax.css" | relative_url }}',
   
   /* --- LOGO --- */
-  '{{ "/assets/zxce3.svg" | relative_url }}',
-  '{{ "/assets/zxce3-white.svg" | relative_url }}',
+  '{{ "/assets/malingit.svg" | relative_url }}',
   
   /* --- JavaScripts --- */
   {% assign js_path = "/assets/js" | relative_url %}

@@ -5,7 +5,7 @@ permalink: '/sw.js'
 
 self.importScripts('{{ "/assets/js/data/swcache.js" | relative_url }}');
 
-const cacheName = 'zxce3-{{ "now" | date: "%Y-%m-%d.%H:%M" }}';
+const cacheName = 'malingit-{{ "now" | date: "%Y-%m-%d.%H:%M" }}';
 
 function verifyDomain(url) {
   for (const domain of allowedDomains) {

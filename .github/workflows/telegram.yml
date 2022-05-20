@@ -1,24 +1,5 @@
-# name: telegram Notify
+name: telegram Notify
 
-# on:
-#   push:
-#     branches: [ master ]  
-#   release:    
-#     types:
-#       - published  
-#   workflow_dispatch: 
-  
-# jobs:
-#   build:    
-#     runs-on: ubuntu-latest    
-#     steps:        
-#     - uses: avkviring/telegram-github-action@v0.0.15
-#       env:
-#         telegram_to: ${{ secrets.RUMAHTOKEN }}
-#         telegram_token: ${{ secrets.BOT }}
-#         event: ${{ toJson(github.event) }}
-
-name: telegram message
 on:
   push:
     branches: [ master ]  
@@ -26,21 +7,13 @@ on:
     types:
       - published  
   workflow_dispatch: 
+  
 jobs:
-
-  build:
-    name: Build
-    runs-on: ubuntu-latest
-    steps:
-      - name: send telegram message on push
-        uses: appleboy/telegram-action@master
-        with:
-          to: ${{ secrets.RUMAHTOKEN }}
-          token: ${{ secrets.BOT }}
-          message: |
-            ${{ github.actor }} created commit:
-            Commit message: ${{ github.event.commits[0].message }}
-            
-            Repository: ${{ github.repository }}
-            
-            See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
+  build:    
+    runs-on: ubuntu-latest    
+    steps:        
+    - uses: avkviring/telegram-github-action@v0.0.15
+      env:
+        telegram_to: ${{ secrets.RUMAHTOKEN }}
+        telegram_token: ${{ secrets.BOT }}
+        event: ${{ toJson(github.event) }}

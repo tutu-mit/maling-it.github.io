@@ -1,6 +1,6 @@
 {% capture result_elem %}
   <div class="col-12 col-md-6 col-lg-4">
-      <a href="{url}" class="cs-zx bg-dark-dm h-100 text-decoration-none border text-dark-lm text-white-dm">
+      <a href="{url}" class="cs-zx bg-dark-dm bg-light-lm h-100 text-decoration-none border text-dark-lm text-white-dm">
           <span class="zc-button mr-5 c-{category}">
           </span>
           <hr>
@@ -33,7 +33,7 @@ SimpleJekyllSearch({
       if (value === '') {
         return `${value}`;
       } else {
-        return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`;
+        return `<div><i class="bi bi-bookmark"></i>${value}</div>`;
       }
     }
   }

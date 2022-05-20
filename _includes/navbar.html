@@ -16,15 +16,8 @@
     </a>
       {% endif %}
     <ul class="navbar-nav hidden-sm-and-down">
-      {%- for category in site.categories -%}
-      <li class="nav-item">
-        <a href="{{category | first | relative_url}}/" class="nav-link">
-          {{ category | first | replace: 'js', 'javascript' | replace: 'nodejavascript', 'nodejs' | replace: 'html', 'HTML' | capitalize}}
 
-        </a>
-      </li>
-      {%- endfor -%}
-    <li class="nav-item d-none dropdown">
+    <li class="nav-item dropdown">
       <span class="nav-link" data-toggle="dropdown" id="nav-link-dropdown-toggle">
         Blog 
         <i class="mt-5 bi-caret-down" aria-hidden="true"></i> 
@@ -47,12 +40,27 @@
     </li>
     </ul>
     <div class="navbar-content ml-auto">
-          <a href="#search-modal" class="btn mr-5" aria-label="search-btn" type="button"><i class="bi-search"></i></a>
+      <a href="#search-modal" class="btn mr-5" aria-label="search-btn" type="button"><i class="bi-search"></i></a>
       <button class="btn btn-action ml-5 hidden-sm-and-down" type="button" onclick="zxce3.toggleDarkMode()" aria-label="Toggle dark mode">
                     <i class="bi-moon-fill hidden-lm" aria-hidden="true"></i>
                     <i class="bi-moon hidden-dm" aria-hidden="true"></i>
                 </button>
-
+                <ul class="navbar-nav hidden-sm-and-down ml-auto">
+                  <li class="nav-item dropdown with-arrow toggle-on-hover">
+                    <a class="nav-link" data-toggle="dropdown" id="nav-link-dropdown-toggle">
+                      Comunity 
+                      <i class="bi bi-arrow-down ml-5" aria-hidden="true"></i> 
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="nav-link-dropdown-toggle">
+                      {% capture title %}{{ page.title }} - {{ site.title }}{% endcapture %}
+                      {% assign url = page.url | absolute_url %}
+                      {% for share in site.data.sharing.sidebar %}
+                      {% assign link = share.link | replace: 'TITLE', title | replace: 'URL', url %}
+                        <a data-toggle="tooltip" data-placement="top" data-title="{{ share.type }}" target="_blank" rel="noopener" aria-label="{{ share.type }}" class="dropdown-item" href="{{ link }}"><i class="mr-5 bi {{ share.icon }}"></i>{{ share.type }}</a>
+                    {% endfor %}
+                    </div>
+                  </li>
+                </ul>
             <button class="btn mr-5 navbar-menu-btn hidden-md-and-up" onclick="zxce3.toggleSidebar()" aria-haspopup="true" aria-expanded="false">
                 <i class="bi bi-bricks"></i>
             </button>
